@@ -179,21 +179,9 @@ li a:focus {
     padding: 1rem;
     }
 @media all and (max-width: 1200px) {
-.header-content-wrapper{
-    background: url(../img/Rectangle52fix.png)no-repeat;
-    height: 308px;
-    width: 719px;
-    background-size: contain;
-    margin-top: 3rem;
+.menu-link{
+    display: none;
 }
-}
-@media all and (max-width: 767px) {
-    .header-content-wrapper{
-        background: url(../img/Rectangle52fix.png)no-repeat;
-        height: 252px;
-        background-size: contain;
-        margin-top: 3rem;
-    }
 }
 .btn-order-now{
     text-transform: uppercase;
