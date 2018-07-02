@@ -74,10 +74,9 @@ color: #95a5ad;
 
 }
 .menu-link a{
-    font-family: "open sans bold", "Helvetica";
-    font-size: 0.9em;
-}.menu-link a{
-    color: #9daeb6;
+     font-family: "open sans bold", "Helvetica";
+     font-size: 0.9em;
+     color: #9daeb6;
     text-transform: uppercase;
 }
 .menu-link a:hover{
@@ -178,10 +177,19 @@ li a:focus {
     color: #ffffff;
     padding: 1rem;
     }
-@media all and (max-width: 1200px) {
-.menu-link{
-    display: none;
-}
+@media all and (max-width: 600px) {
+    .menu-link a{
+        font-size: 0.6em;
+     }
+    .top-content p{
+        font-size: 2em;
+    }
+    .top-content span {
+        top: 17rem;
+    }
+    .top-content h4 {
+        width: 18rem;
+    }
 }
 .btn-order-now{
     text-transform: uppercase;
