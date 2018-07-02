@@ -19,7 +19,7 @@
     src: url('../fonts/OpenSans-Regular.ttf');
 }
 .header-bg{
-    background: url(../img/headerbg.png) 50% 3% no-repeat;
+    background: url(../img/Rectangle52.png) 50% -3% no-repeat, url(../img/headerbg.png) 50% 3% no-repeat;
     overflow: hidden;
     min-width: 1000px;
     margin: 0;
@@ -29,6 +29,8 @@
     background: url(../img/Rectangle49.png) repeat-x;
     height: 4rem;
     width: 100%;
+    position: absolute;
+    top: 0px;
 }
 .btn-call-us{
     text-transform: uppercase;
@@ -44,13 +46,18 @@
 .btn-call-us:hover{
     background-color: #36aeea;
     color: #ffffff;
-    font-size: 13px;
+    font-size: 0.7em;
 }
 ul li {
     display: inline; /* Отображать как строчный элемент */
     margin-right: 5px; /* Отступ слева */
     padding: 3px; /* Поля вокруг текста */
 }
+
+.menu-wrapper{
+    width: 100%;
+}
+
 .menu-brand, .menu-brand a:hover{
     margin-top: -5px;
     font-size: 23pt;
@@ -143,30 +150,28 @@ li a:focus {
     transform: translateY(0px);
 }
 /* menu link animation end*/
-.header-content-wrapper{
+.top-content{
     padding: 13px 43px;
-    background: url(../img/Rectangle52.png) 100% 0% no-repeat;
     height: 324px;
     width: 1140px;
-    background-size: contain;
-    margin-top: 10rem;
+    margin-top: 15rem;
 }
-.header-content-wrapper p{
+.top-content p{
     font-family: "open sans bold";
     font-size: 4em;
     text-transform: uppercase;
     color: #ffffff;
 }
 
-.header-content-wrapper span{
+.top-content span{
     font-family: "bringin";
     font-size: 1em;
     text-transform: none;
     color: #36aeea;
     position: absolute;
-    top: 17rem;
+    top: 18rem;
 }
-.header-content-wrapper h4{
+.top-content h4{
     font-family: "OpenSans-Regular";
     font-size: 1em;
     text-transform: none;
@@ -207,5 +212,5 @@ li a:focus {
     border: 3px solid;
     border-radius: 3px;
     color: #ffffff;
-    font-size: 13px;
+    font-size: 0.7em;
 }
