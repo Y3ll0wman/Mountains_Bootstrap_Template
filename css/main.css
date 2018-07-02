@@ -1,0 +1,211 @@
+@font-face{
+    font-family: 'bringin';
+    src: url('../fonts/bringin.otf');
+}
+@font-face{
+    font-family: 'open sans bold';
+    src: url('../fonts/OpenSans-Bold.ttf');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'raleway bold';
+    src: url('../fonts/Raleway-Bold.ttf');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'OpenSans-Regular';
+    src: url('../fonts/OpenSans-Regular.ttf');
+}
+.header-bg{
+    background: url(../img/headerbg.png) 50% 3% no-repeat;
+    overflow: hidden;
+    min-width: 1000px;
+    margin: 0;
+    padding: 0;
+}
+.header-rectangle{
+    background: url(../img/Rectangle49.png) repeat-x;
+    height: 4rem;
+    width: 100%;
+}
+.btn-call-us{
+    text-transform: uppercase;
+    border: 2px solid;
+    background: transparent;
+    color: #36aeea;
+    border-radius: 5px;
+    padding: 0px 30px;
+    font-family: "open sans bold";
+    font-size: 0.7em;
+    height: 30px;
+}
+.btn-call-us:hover{
+    background-color: #36aeea;
+    color: #ffffff;
+    font-size: 13px;
+}
+ul li {
+    display: inline; /* Отображать как строчный элемент */
+    margin-right: 5px; /* Отступ слева */
+    padding: 3px; /* Поля вокруг текста */
+}
+.menu-brand, .menu-brand a:hover{
+    margin-top: -5px;
+    font-size: 23pt;
+    font-family: "bringin", "Comic Sans MS";
+    text-decoration: none !important;
+}
+.menu-brand p{
+color: #43b3eb;
+}
+.menu-brand span{
+color: #95a5ad;
+}
+.menu-brand, .menu-link a{
+
+}
+.menu-link a{
+    font-family: "open sans bold", "Helvetica";
+    font-size: 0.9em;
+}.menu-link a{
+    color: #9daeb6;
+    text-transform: uppercase;
+}
+.menu-link a:hover{
+    text-decoration: none;
+    color: #36aeea;
+}
+.call-us{
+
+}
+.menu-nav{
+    position: relative;
+}
+.blog-wrapper{
+    background-color: #f6f4f4;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+/* menu link animation start*/
+*,
+*:after,
+*::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+nav a {
+    position: relative;
+    display: inline-block;
+    margin: 5px 19px;
+    outline: none;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    text-shadow: 0 0 1px rgba(255,255,255,0.3);
+}
+li a:hover,
+li a:focus {
+    outline: none;
+}
+.menu-link a {
+    padding: 0 0 10px;
+}
+.menu-link a::after {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #36aeea;
+    content: '';
+    opacity: 0;
+    -webkit-transition: height 0.3s, opacity 0.3s, -webkit-transform 0.3s;
+    -moz-transition: height 0.3s, opacity 0.3s, -moz-transform 0.3s;
+    transition: height 0.3s, opacity 0.3s, transform 0.3s;
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    transform: translateY(-10px);
+}
+.menu-link a:hover::after,
+.menu-link a:focus::after {
+    height: 2px;
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    transform: translateY(0px);
+}
+/* menu link animation end*/
+.header-content-wrapper{
+    padding: 13px 43px;
+    background: url(../img/Rectangle52.png) 100% 0% no-repeat;
+    height: 324px;
+    width: 1140px;
+    background-size: contain;
+    margin-top: 10rem;
+}
+.header-content-wrapper p{
+    font-family: "open sans bold";
+    font-size: 4em;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.header-content-wrapper span{
+    font-family: "bringin";
+    font-size: 1em;
+    text-transform: none;
+    color: #36aeea;
+    position: absolute;
+    top: 17rem;
+}
+.header-content-wrapper h4{
+    font-family: "OpenSans-Regular";
+    font-size: 1em;
+    text-transform: none;
+    color: #ffffff;
+    padding: 1rem;
+    }
+@media all and (max-width: 1200px) {
+.header-content-wrapper{
+    background: url(../img/Rectangle52fix.png)no-repeat;
+    height: 308px;
+    width: 719px;
+    background-size: contain;
+    margin-top: 3rem;
+}
+}
+@media all and (max-width: 767px) {
+    .header-content-wrapper{
+        background: url(../img/Rectangle52fix.png)no-repeat;
+        height: 252px;
+        background-size: contain;
+        margin-top: 3rem;
+    }
+}
+.btn-order-now{
+    text-transform: uppercase;
+    border: 0px solid;
+    background: #36aeea;
+    color: #ffffff;
+    border-radius: 3px;
+    font-family: "raleway bold";
+    font-size: 0.7em;
+    height: 42px;
+    width: 141px;
+    position: relative;
+}
+.btn-order-now:hover{
+    background-color: #36aeea;
+    border: 3px solid;
+    border-radius: 3px;
+    color: #ffffff;
+    font-size: 13px;
+}
