@@ -18,12 +18,22 @@
     font-family: 'OpenSans-Regular';
     src: url('../fonts/OpenSans-Regular.ttf');
 }
+.container-fluid {
+    width: 100%;
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-right: auto;
+    margin-left: auto;
+}
 .header-bg{
+    position: relative;
+    z-index: 1;
     background: url(../img/Rectangle52.png) 50% -3% no-repeat, url(../img/headerbg.png) 50% 3% no-repeat;
     overflow: hidden;
     min-width: 1000px;
     margin: 0;
     padding: 0;
+    height: 698px;
 }
 .header-rectangle{
     background: url(../img/Rectangle49.png) repeat-x;
@@ -53,11 +63,9 @@ ul li {
     margin-right: 5px; /* Отступ слева */
     padding: 3px; /* Поля вокруг текста */
 }
-
 .menu-wrapper{
     width: 100%;
 }
-
 .menu-brand, .menu-brand a:hover{
     margin-top: -5px;
     font-size: 23pt;
@@ -70,9 +78,6 @@ color: #43b3eb;
 .menu-brand span{
 color: #95a5ad;
 }
-.menu-brand, .menu-link a{
-
-}
 .menu-link a{
      font-family: "open sans bold", "Helvetica";
      font-size: 0.9em;
@@ -82,9 +87,6 @@ color: #95a5ad;
 .menu-link a:hover{
     text-decoration: none;
     color: #36aeea;
-}
-.call-us{
-
 }
 .menu-nav{
     position: relative;
@@ -161,7 +163,6 @@ li a:focus {
     text-transform: uppercase;
     color: #ffffff;
 }
-
 .top-content span{
     font-family: "bringin";
     font-size: 1em;
@@ -175,7 +176,7 @@ li a:focus {
     font-size: 1em;
     text-transform: none;
     color: #ffffff;
-    padding: 1rem;
+    padding: 1rem 0;
     }
 @media all and (max-width: 600px) {
     .menu-link a{
@@ -200,7 +201,7 @@ li a:focus {
     font-family: "raleway bold";
     font-size: 0.7em;
     height: 42px;
-    width: 141px;
+    width: 252px;
     position: relative;
 }
 .btn-order-now:hover{
@@ -209,4 +210,73 @@ li a:focus {
     border-radius: 3px;
     color: #ffffff;
     font-size: 0.7em;
+}
+/*About Us*/
+.about-us-bg{
+    position: relative;
+    z-index: 2;
+    /*background: url(../img/about-us-bg2.png) 50% 3% repeat-y;*/
+    overflow: hidden;
+    min-width: 1000px;
+    margin: 0;
+    padding: 0;
+    display: block;
+    top: -2rem;
+    height: 48rem;
+}
+
+.about-us-content{
+    /* background: url(../img/about-us-img-1.png) 50% -3% no-repeat, url(../img/about-us-img-2.png) 50% 3% no-repeat, url(../img/about-us-bg.png) 12rem 11% no-repeat;
+     background-color: #f6f4f4;*/
+    background: url(../img/about-us-bg.png) 12rem 11% no-repeat, url(../img/blog-background.png) 12rem 11% no-repeat;
+    height: 667px;
+}
+
+.btn-read-more{
+    text-transform: uppercase;
+    border: 0px solid;
+    background: #36aeea;
+    color: #ffffff;
+    border-radius: 3px;
+    font-family: "raleway bold";
+    font-size: 0.7em;
+    height: 42px;
+    width: 141px;
+    position: relative;
+}
+.btn-read-more:hover{
+    background-color: #36aeea;
+    border: 3px solid;
+    border-radius: 3px;
+    color: #ffffff;
+    font-size: 0.7em;
+}
+.about-us-desc h{
+    font-size: 1.4em;
+    font-family: "open sans bold", "Comic Sans MS";
+    text-transform: uppercase;
+    }
+.about-us-desc p{
+    font-size: 1em;
+    font-family: "OpenSans-Regular", "Comic Sans MS";
+    color: #aeaeae;
+    padding: 1rem 0;
+}
+.about-us-desc.text-left {
+    top: 15rem;
+    position: absolute;
+}
+.about-us-img1{
+    position: relative;
+    z-index: 4;
+    background: url(../img/about-us-img-1.png) 28rem 0rem no-repeat;
+    height: 350px;
+    top: -51rem;
+}
+.about-us-img2{
+    position: relative;
+    z-index: 3;
+    background: url(../img/about-us-img-2.png) 35rem 0rem no-repeat;
+    height: 570px;
+    top: -42rem;
 }
