@@ -26,12 +26,7 @@
 			<div class="col-12"></div>
 			</div>
 	</div>
-	<!--<div class="row stroka">
-		<div class="d-flex justify-content-center kontainer">
-			<!--<img src="img/bggg.png">
-		</div>
-	</div>-->
-	<div class="screen_menu">
+		<div class="screen_menu">
 		<nav class="screen_menu_item" id="">
 			<a href="#about_us">our story</a>
 			<a href="#our-journal">services</a>
@@ -348,31 +343,34 @@
 			<div class="row">
 				<div class="container">
 					<div class="row">
-						<div class="col-lg-6 col-mb-6 col-sm-12 col-xs-12 last_cta">
+
+				<div class="col-lg-6 col-mb-6 col-sm-12 col-xs-12 last_cta">
 							<span>CONTACTS</span>
 							<p>Sign up for our newsletter to receive updates</p>
-							<div class="input-group mb-3">
+					<form action="send.php" method="post">
+					<div class="input-group mb-3">
 								<div class="input-group-prepend">
 
 								</div>
-								<input type="text" class="form-control" placeholder="Name" aria-label="Name" aria-describedby="basic-addon1">
+								<input type="text" name="fio" class="form-control" placeholder="Name" aria-label="Name" aria-describedby="basic-addon1">
 							</div>
 
 							<div class="input-group mb-3">
-								<input type="text" class="form-control" placeholder="Phone" aria-label="Phone" aria-describedby="basic-addon2">
+								<input type="text" name="phone" class="form-control" placeholder="Phone" aria-label="Phone" aria-describedby="basic-addon2">
 								<div class="input-group-append">
 
 								</div>
 							</div>
 							<div class="input-group mb-3">
-								<input type="text" class="form-control" placeholder="E-mail" aria-label="E-mail" aria-describedby="basic-addon2">
+								<input type="text" name="email" class="form-control" placeholder="E-mail" aria-label="E-mail" aria-describedby="basic-addon2">
 								<div class="input-group-append">
 
 								</div>
 							</div>
-							<button type="button" class="btn btn-primary btn-lg btn-block">SEND</button>
+							<button type="submit" class="btn btn-primary btn-lg btn-block">SEND</button>
+					</form>
+				</div>
 
-						</div>
 					</div>
 				</div>
 			</div>
@@ -389,14 +387,9 @@
 							<a href="#"><img src="img/tw.png"> </a>
 						</div>
 					<span><b>231321321321</b></span>
-
 				</div>
 			</div>
-
 	</section>
-
-
-
 <script>openScreenMenu()</script>
 <script>openMenu()</script>
 </body>
