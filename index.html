@@ -10,10 +10,11 @@
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:800" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<link rel="stylesheet" type="js" href="js/bootstrap.js">
+	<link rel="stylesheet" type="js" href="js/bootstrap.min.js">
 	<script src="js/jquery-3.3.1.min.js"></script>
 	<script	src="js/visual.js"></script><script	src="js/jumplink.js"></script>
-</head>
+	<script	src="js/jquery.maskedinput.min.js"></script>
+	</head>
 <body>
 	<div class="db container">
 		<div class="row">
@@ -343,8 +344,7 @@
 			<div class="row">
 				<div class="container">
 					<div class="row">
-
-				<div class="col-lg-6 col-mb-6 col-sm-12 col-xs-12 last_cta">
+					<div class="col-lg-6 col-mb-6 col-sm-12 col-xs-12 last_cta">
 							<span>CONTACTS</span>
 							<p>Sign up for our newsletter to receive updates</p>
 					<form action="send.php" method="post">
@@ -352,24 +352,24 @@
 								<div class="input-group-prepend">
 
 								</div>
-								<input type="text" name="fio" class="form-control" placeholder="Name" aria-label="Name" aria-describedby="basic-addon1">
+								<input type="text" name="fio" required oninvalid="this.setCustomValidity('Enter your name.')" oninput="setCustomValidity('')" class="form-control" placeholder="Name" aria-label="Name" aria-describedby="basic-addon1">
 							</div>
 
+
 							<div class="input-group mb-3">
-								<input type="text" name="phone" class="form-control" placeholder="Phone" aria-label="Phone" aria-describedby="basic-addon2">
+
+								<input type="text" id="phone" name="phone" required oninvalid="this.setCustomValidity('Enter your phone number.')" oninput="setCustomValidity('')" class="form-control" placeholder="Phone" aria-label="Phone" aria-describedby="basic-addon2">
 								<div class="input-group-append">
 
 								</div>
 							</div>
 							<div class="input-group mb-3">
-								<input type="text" name="email" class="form-control" placeholder="E-mail" aria-label="E-mail" aria-describedby="basic-addon2">
-								<div class="input-group-append">
-
-								</div>
+								<input type="email" name="email" required oninvalid="this.setCustomValidity('Enter your E-mail.')" oninput="setCustomValidity('')" class="form-control" placeholder="E-mail" aria-label="E-mail" aria-describedby="basic-addon2">
 							</div>
+						<div id="form_result"></div>
 							<button type="submit" class="btn btn-primary btn-lg btn-block">SEND</button>
 					</form>
-				</div>
+					</div>
 
 					</div>
 				</div>
@@ -392,5 +392,25 @@
 	</section>
 <script>openScreenMenu()</script>
 <script>openMenu()</script>
+<script	src="js/phonemask.js"></script>
+	<div class="modal newsletter" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">Modal title</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<p>Modal body text goes here.</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-primary">Save changes</button>
+				</div>
+			</div>
+		</div>
+	</div>
 </body>
 </html>
