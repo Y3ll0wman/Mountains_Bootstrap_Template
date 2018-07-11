@@ -92,7 +92,7 @@ header .row span{
     color: #ffffff;
 }
 header .row span:after{
-    content: 'to the Mountaing';
+    content: 'to the Mountains';
     position: absolute;
     font-family: 'bringin';
     text-transform: none;
