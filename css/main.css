@@ -1201,6 +1201,7 @@ div#msgSubmit {
     padding-top: 2rem;
     color: #ffffff;
 }
+
 #toTop {
     width: 9rem;
     height: 3rem;
@@ -1220,6 +1221,7 @@ div#msgSubmit {
     border: 2px solid #36aeea;
     z-index: 22;
 }
+
 #toTop:hover {
     width: 9rem;
     height: 3rem;
